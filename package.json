@@ -8,6 +8,8 @@
     "husky": "^9.1.7"
   },
   "scripts": {
+    "check": "pnpm -r check",
+    "check:fix": "pnpm -r check:fix",
     "prepare": "husky"
   }
 }
