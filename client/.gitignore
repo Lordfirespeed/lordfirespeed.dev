@@ -1,2 +1,5 @@
 # next-env.d.ts is auto-generated
 next-env.d.ts
+
+# components.json - shadcn configuration
+!components.json
