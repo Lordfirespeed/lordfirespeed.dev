@@ -19,11 +19,9 @@
 
 ## Config files
 !*config*.ts
-!*config*.cts
-!*config*.mts
+!*config*.[cm]ts
 !*config*.js
-!*config*.cjs
-!*config*.mjs
+!*config*.[cm]js
 !*config*.json
 !*rc.json
 
