@@ -22,8 +22,6 @@
 !*config*.cjs
 !*config*.js
 !*config*.json
-!*env.d.ts
-!*env.ts
 !*rc.json
 
 ## Biome.js
