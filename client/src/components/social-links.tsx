@@ -13,7 +13,7 @@ function SocialLink({ profile: { href, icon: ProfileIcon } }: { profile: SocialN
 
 export function SocialLinks({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <article className={cn("flex flex-row", className)} {...props}>
+    <article className={cn("flex flex-row space-x-5", className)} {...props}>
       {socials.map((profile) => (
         <SocialLink key={profile.slug} profile={profile} />
       ))}
