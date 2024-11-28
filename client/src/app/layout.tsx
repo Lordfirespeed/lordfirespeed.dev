@@ -1,20 +1,11 @@
 import type { Metadata } from "next"
-import localFont from "next/font/local"
 import type * as React from "react"
 
 import { ThemeProvider } from "@/components/theme-provider"
-import "@/styles/globals.css"
+import { fontVariableClassNames } from "@/lib/fonts"
+import { cn } from "@/lib/utils"
 
-const geistSans = localFont({
-  src: "../styles/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-})
-const geistMono = localFont({
-  src: "../styles/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-})
+import "@/styles/globals.css"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={cn(fontVariableClassNames, "antialiased")}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
