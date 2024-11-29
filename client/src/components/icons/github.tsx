@@ -1,11 +1,17 @@
 import * as React from "react"
 
-import type { IconProps } from "@/types/icons"
+import { type IconProps, iconVariants } from "@/types/icons"
 
 // https://simpleicons.org/?q=github
-export function GitHubIcon(props: IconProps) {
+export function GitHubIcon({ variant, className, ...props }: IconProps) {
   return (
-    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      className={iconVariants({ variant, className })}
+      {...props}
+    >
       <title>GitHub</title>
       <path
         fill="currentColor"

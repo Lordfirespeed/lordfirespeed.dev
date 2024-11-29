@@ -1,26 +1,20 @@
 import * as React from "react"
 
-import type { IconProps } from "@/types/icons"
-
-export const npmBrandColour = "#CB3837"
-
-export const npmIconColours = {
-  brand: npmBrandColour,
-  inherit: "currentColor",
-} as const
-
-export type NPMIconProps = IconProps & {
-  variant?: keyof typeof npmIconColours | null | undefined
-}
+import { type IconProps, iconVariants } from "@/types/icons"
 
 // https://simpleicons.org/?q=npm
-export function NPMIcon({ variant, ...props }: NPMIconProps) {
-  const fillColour = npmIconColours[variant ?? "inherit"]
+export function NPMIcon({ variant, className, ...props }: IconProps) {
   return (
-    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      className={iconVariants({ variant, className })}
+      {...props}
+    >
       <title>npm</title>
       <path
-        fill={fillColour}
+        fill="currentColor"
         d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z"
       />
     </svg>
