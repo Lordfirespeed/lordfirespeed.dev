@@ -2,6 +2,9 @@ import * as React from "react"
 
 import { type IconProps, iconVariants } from "@/types/icons"
 
+import "@/styles/components/icons.css"
+import "@/styles/components/icons/discord.css"
+
 // https://simpleicons.org/?q=discord
 export function DiscordIcon({ variant, className, ...props }: IconProps) {
   return (

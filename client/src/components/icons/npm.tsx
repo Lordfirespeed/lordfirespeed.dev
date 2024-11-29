@@ -2,6 +2,9 @@ import * as React from "react"
 
 import { type IconProps, iconVariants } from "@/types/icons"
 
+import "@/styles/components/icons.css"
+import "@/styles/components/icons/npm.css"
+
 // https://simpleicons.org/?q=npm
 export function NPMIcon({ variant, className, ...props }: IconProps) {
   return (

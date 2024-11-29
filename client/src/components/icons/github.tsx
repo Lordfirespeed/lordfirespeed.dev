@@ -2,6 +2,9 @@ import * as React from "react"
 
 import { type IconProps, iconVariants } from "@/types/icons"
 
+import "@/styles/components/icons.css"
+import "@/styles/components/icons/github.css"
+
 // https://simpleicons.org/?q=github
 export function GitHubIcon({ variant, className, ...props }: IconProps) {
   return (
