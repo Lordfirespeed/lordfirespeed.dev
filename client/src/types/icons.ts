@@ -6,7 +6,7 @@ export const iconVariants = cva("icon", {
   variants: {
     variant: {
       brand: "icon-brand",
-      "brand-hover": "icon-brand-hover",
+      "brand-hover": "icon-brand-hover transition-colors",
       inherit: "",
     },
   },
