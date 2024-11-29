@@ -1,5 +1,6 @@
 import * as React from "react"
 
+import { cn } from "@/lib/utils"
 import { type IconProps, iconVariants } from "@/types/icons"
 
 import "@/styles/components/icons.css"
@@ -7,6 +8,7 @@ import "@/styles/components/icons/github.css"
 
 // https://simpleicons.org/?q=github
 export function GitHubIcon({ variant, className, ...props }: IconProps) {
+  className = cn("github-icon", className)
   return (
     <svg
       role="img"

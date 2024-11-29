@@ -1,5 +1,6 @@
 import * as React from "react"
 
+import { cn } from "@/lib/utils"
 import { type IconProps, iconVariants } from "@/types/icons"
 
 import "@/styles/components/icons.css"
@@ -7,6 +8,7 @@ import "@/styles/components/icons/pypi.css"
 
 // https://simpleicons.org/?q=pypi
 export function PyPIIcon({ variant, className, ...props }: IconProps) {
+  className = cn("pypi-icon", className)
   return (
     <svg
       role="img"
