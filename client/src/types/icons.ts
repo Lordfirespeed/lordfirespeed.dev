@@ -2,7 +2,7 @@ import type * as React from "react"
 
 import { type VariantProps, cva } from "class-variance-authority"
 
-export const iconVariants = cva("icon", {
+export const iconVariantsBaseOptions = {
   variants: {
     variant: {
       brand: "icon-brand",
@@ -13,7 +13,9 @@ export const iconVariants = cva("icon", {
   defaultVariants: {
     variant: "inherit",
   },
-})
+} as const
+
+export const iconVariants = cva("icon", iconVariantsBaseOptions)
 
 export type IconVariantProps = VariantProps<typeof iconVariants>
 
