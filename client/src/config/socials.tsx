@@ -15,27 +15,37 @@ export type SocialNetworkProfile = {
 export const socials: SocialNetworkProfile[] = [
   {
     slug: "npm",
-    icon: NPMIcon,
+    icon: (props) => {
+      return <NPMIcon variant="brand-hover" {...props} />
+    },
     href: "https://www.npmjs.com/~lordfirespeed",
   },
   {
     slug: "pypi",
-    icon: PyPIIcon,
+    icon: (props) => {
+      return <PyPIIcon variant="brand-hover" {...props} />
+    },
     href: "https://pypi.org/user/Lordfirespeed/",
   },
   {
     slug: "github",
-    icon: GitHubIcon,
+    icon: (props) => {
+      return <GitHubIcon variant="pride-hover" {...props} />
+    },
     href: "https://github.com/lordfirespeed",
   },
   {
     slug: "discord",
-    icon: DiscordIcon,
+    icon: (props) => {
+      return <DiscordIcon variant="brand-hover" {...props} />
+    },
     href: "https://discord.com/users/290259615059279883",
   },
   {
     slug: "nuget",
-    icon: NuGetIcon,
+    icon: (props) => {
+      return <NuGetIcon variant="brand-hover" {...props} />
+    },
     href: "https://www.nuget.org/profiles/lordfirespeed",
   },
 ]
