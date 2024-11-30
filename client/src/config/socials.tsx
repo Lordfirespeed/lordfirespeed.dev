@@ -30,7 +30,7 @@ export const socials: SocialNetworkProfile[] = [
   {
     slug: "github",
     icon: (props) => {
-      return <GitHubIcon variant="brand-hover" {...props} />
+      return <GitHubIcon variant="pride-hover" {...props} />
     },
     href: "https://github.com/lordfirespeed",
   },
