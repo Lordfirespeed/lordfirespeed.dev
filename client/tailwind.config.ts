@@ -9,6 +9,7 @@ const config: Config = {
     "./src/config/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/styles/**/*.css",
+    "./src/variants/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
