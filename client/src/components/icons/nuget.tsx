@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
-import { type IconProps, iconVariants } from "@/types/icons"
+import { type IconProps, iconVariants } from "@/variants/icons"
 
 import "@/styles/components/icons.css"
 import "@/styles/components/icons/nuget.css"

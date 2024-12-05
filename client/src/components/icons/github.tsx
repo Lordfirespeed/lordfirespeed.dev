@@ -3,7 +3,7 @@ import type * as React from "react"
 
 import { deepMerge } from "@/lib/deep-merge"
 import { cn } from "@/lib/utils"
-import { iconVariantsBaseOptions } from "@/types/icons"
+import { iconVariantsBaseOptions } from "@/variants/icons"
 
 import "@/styles/components/icons.css"
 import "@/styles/components/icons/github.css"
