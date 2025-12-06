@@ -22,17 +22,21 @@ type GitHubIconVariantProps = React.HTMLAttributes<SVGElement> & VariantProps<ty
 
 function GitHubIconPrideGradient() {
   return (
-    <linearGradient id="github-pride" x1="0" x2="24" y1="5.7" y2="18.3" gradientUnits="userSpaceOnUse">
-      <stop offset="15.0%" stopColor="#ef4b4c" />
-      <stop offset="15.0%" stopColor="#f79b46" />
-      <stop offset="32.5%" stopColor="#f79b46" />
-      <stop offset="32.5%" stopColor="#faeb20" />
-      <stop offset="50.0%" stopColor="#faeb20" />
-      <stop offset="50.0%" stopColor="#7dc243" />
-      <stop offset="67.5%" stopColor="#7dc243" />
-      <stop offset="67.5%" stopColor="#5c92ce" />
-      <stop offset="85.0%" stopColor="#5c92ce" />
-      <stop offset="85.0%" stopColor="#855ca8" />
+    <linearGradient id="github-pride" x1="3.515" x2="20.485" y1="3.812" y2="20.782" gradientUnits="userSpaceOnUse">
+      <stop offset="12.5%" stopColor="#e26bb3" />
+      <stop offset="12.5%" stopColor="#ef4b4c" />
+      <stop offset="25%" stopColor="#ef4b4c" />
+      <stop offset="25%" stopColor="#f79b46" />
+      <stop offset="37.5%" stopColor="#f79b46" />
+      <stop offset="37.5%" stopColor="#faeb20" />
+      <stop offset="50%" stopColor="#faeb20" />
+      <stop offset="50%" stopColor="#7dc243" />
+      <stop offset="62.5%" stopColor="#7dc243" />
+      <stop offset="62.5%" stopColor="#70abe6" />
+      <stop offset="75%" stopColor="#70abe6" />
+      <stop offset="75%" stopColor="#6168d9" />
+      <stop offset="87.5%" stopColor="#6168d9" />
+      <stop offset="87.5%" stopColor="#855ca8" />
     </linearGradient>
   )
 }
@@ -64,7 +68,7 @@ function GitHubIconPrideHover({ className, ...props }: React.HTMLAttributes<SVGE
           width="24"
           height="24"
           fill="url(#github-pride)"
-          className="transition-opacity opacity-0 group-hover:opacity-100"
+          className="transition-opacity opacity-100 group-hover:opacity-100"
         />
       </g>
     </svg>
