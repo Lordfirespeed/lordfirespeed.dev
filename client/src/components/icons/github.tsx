@@ -68,7 +68,7 @@ function GitHubIconPrideHover({ className, ...props }: React.HTMLAttributes<SVGE
           width="24"
           height="24"
           fill="url(#github-pride)"
-          className="transition-opacity opacity-100 group-hover:opacity-100"
+          className="transition-opacity opacity-0 group-hover:opacity-100"
         />
       </g>
     </svg>
